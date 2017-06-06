@@ -47,7 +47,7 @@ docker run \
   -v $PWD/sec:/secrets \
   -e PROJECT=project2 \
   -e ENVIRONMENT=staging \
-  -e GIT_REPO=git@bitbucket.org:softonic-development/secrets.git \
+  -e GIT_REPO=git@my-git.server/repo \
   -e GIT_PK=$(base64 ~/.ssh/id_rsa_secrets) \
   softonic/secret-mounter
 ```
